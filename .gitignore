@@ -1,0 +1,16 @@
+# Node.js dependencies
+client/kineton-app/node_modules/
+
+# Python virtual environment
+server/venv/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Python cache files
+*.pyc
+__pycache__/
+
+# Log files
+*.log
