@@ -31,23 +31,26 @@ export default function Contact() {
                     placeholder="Name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
+                    required
                 />
                 <input
                     type="email"
                     placeholder="Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    required
                 />
                 <textarea
                     placeholder="Message"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
+                    required
                 ></textarea>
                 <button type="submit">
                     Submit
                 </button>
             </form>
-            {status && <p>{status}</p>}
+            {status && <p className="status-message">{status}</p>}
         </div>
     );
 }
